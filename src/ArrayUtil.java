@@ -13,13 +13,14 @@ public class ArrayUtil {
      * @return String array with common elements
      */
     public static String[] findCommon(String[] array1, String[] array2) {
+        List<String> commonElArray = new ArrayList<>();
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array2.length; j++) {
                 if (array1[i] == array2[j]) {
-                    System.out.println(array1[i]);
+                    commonElArray.add(array1[i]);
                 }
             }
         }
-        return new String[0];
+        return commonElArray.toArray(new String[0]);
     }
 }
