@@ -24,14 +24,14 @@ public class ArraysTest {
                         new String[]{"orange", "garlic", "meat"}
                 },
                 {
-                        new String[]{"here", "is", "some", "text", "."},
-                        new String[]{"some", "text", "above", "."},
-                        new String[]{"some", "text", "."}
+                        new String[]{"bear", "fox", "elephant", "cat", "dog"},
+                        new String[]{"wolf", "bear", "cat", "mouse", "tiger", "puma"},
+                        new String[]{"bear", "cat"}
                 }
         };
     }
 
-    @Test(dataProvider = "ArrayUtil")
+    @org.testng.annotations.Test(dataProvider = "ArrayUtil")
     public void testFindCommon(String[] array1, String[] array2, String[] expectedResult) {
 
         assertEquals(ArrayUtil.findCommon(array1, array2), expectedResult,
