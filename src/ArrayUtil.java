@@ -16,7 +16,7 @@ public class ArrayUtil {
         List<String> commonElArray = new ArrayList<>();
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array2.length; j++) {
-                if (array1[i] == array2[j]) {
+                if (array1[i] == array2[j] && !commonElArray.contains(array1[i])) {
                     commonElArray.add(array1[i]);
                 }
             }

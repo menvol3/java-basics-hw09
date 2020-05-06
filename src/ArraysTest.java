@@ -24,9 +24,9 @@ public class ArraysTest {
                         new String[]{"orange", "garlic", "meat"}
                 },
                 {
-                        new String[]{"bear", "fox", "elephant", "cat", "dog"},
-                        new String[]{"wolf", "bear", "cat", "mouse", "tiger", "puma"},
-                        new String[]{"bear", "cat"}
+                        new String[]{"here", "is", "some", "text", ".", "text"},
+                        new String[]{"some", "text", "above", "."},
+                        new String[]{"some", "text", "."}
                 }
         };
     }
